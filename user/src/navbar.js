@@ -4,7 +4,7 @@ const navbar = () => {
   return (
     <nav
       class="navbar navbar-expand-lg navbar-dark static-top"
-      style={{ backgroundColor: "#b3d1ff" }}
+      style={{ backgroundColor: "#b3d1ff", height: "70px" }}
     >
       <div class="container">
         <Link
@@ -21,18 +21,19 @@ const navbar = () => {
           data-bs-toggle="collapse"
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
+          aria-haspopup="true"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon btn-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
               <Link
-                class="nav-link active text-dark t"
+                class="nav-link active text-dark"
                 aria-current="page"
-                style={{ fontSize: "30px" }}
+                style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
                 Home
@@ -41,16 +42,25 @@ const navbar = () => {
             <li class="nav-item text-dark">
               <Link
                 class="nav-link text-dark"
-                style={{ fontSize: "30px" }}
+                style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
-                Link
+                Study Guides
+              </Link>
+            </li>
+            <li class="nav-item text-dark">
+              <Link
+                class="nav-link text-dark"
+                style={{ fontSize: "20px", marginTop: "7px" }}
+                to="/"
+              >
+                Gallery
               </Link>
             </li>
             <li class="nav-item dropdown">
               <Link
                 class="nav-link dropdown-toggle text-dark"
-                style={{ fontSize: "30px" }}
+                style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
                 id="navbarDropdown"
                 role="button"
@@ -58,7 +68,7 @@ const navbar = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                Classes
               </Link>
               <ul
                 class="dropdown-menu dropdown-menu-end"
@@ -66,12 +76,7 @@ const navbar = () => {
               >
                 <li>
                   <Link class="dropdown-item text-dark" to="/">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link class="dropdown-item text-dark" to="/">
-                    Another action
+                    O/L
                   </Link>
                 </li>
                 <li>
@@ -79,27 +84,51 @@ const navbar = () => {
                 </li>
                 <li>
                   <Link class="dropdown-item text-dark" to="/">
-                    Something else here
+                    A/L
                   </Link>
                 </li>
               </ul>
             </li>
-            <div className="form-row">
-              <div className="col">
-                <div class="md-form">
-                  <Link className="btn btn-outline-primary" to="/">
-                    Sign In
-                  </Link>
-                </div>
-              </div>
-              <div className="col">
-                <div className="md-form">
-                  <Link className="btn btn-primary" to="/">
-                    Register
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <li class="nav-item text-dark">
+              <Link
+                class="nav-link text-dark"
+                style={{ fontSize: "20px", marginTop: "7px" }}
+                to="/"
+              >
+                Blogs
+              </Link>
+            </li>
+            <li class="nav-item text-dark">
+              <Link
+                class="nav-link text-dark"
+                style={{ fontSize: "20px", marginTop: "7px" }}
+                to="/"
+              >
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="btn btn-outline-primary rounded btn-sm"
+                style={{
+                  fontSize: "20px",
+                  margin: "10px",
+                }}
+                to="/"
+              >
+                Sign In
+              </Link>
+              <Link
+                className="btn btn-primary rounded btn-sm"
+                style={{
+                  fontSize: "20px",
+                  margin: "10px",
+                }}
+                to="/"
+              >
+                Register
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
