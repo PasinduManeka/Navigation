@@ -4,11 +4,11 @@ const navbar = () => {
   return (
     <nav
       class="navbar navbar-expand-lg navbar-dark static-top"
-      style={{ backgroundColor: "#b3d1ff", height: "70px" }}
+      style={{ backgroundColor: "transparent", height: "70px" }}
     >
       <div class="container">
         <Link
-          class="h4 navbar-brand text-dark"
+          class="h4 navbar-brand text-light"
           style={{ fontSize: "30px" }}
           to="/"
         >
@@ -31,7 +31,7 @@ const navbar = () => {
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
               <Link
-                class="nav-link active text-dark"
+                class="nav-link active text-light"
                 aria-current="page"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
@@ -39,18 +39,18 @@ const navbar = () => {
                 Home
               </Link>
             </li>
-            <li class="nav-item text-dark">
+            <li class="nav-item text-light">
               <Link
-                class="nav-link text-dark"
+                class="nav-link text-light"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
                 Study Guides
               </Link>
             </li>
-            <li class="nav-item text-dark">
+            <li class="nav-item text-light">
               <Link
-                class="nav-link text-dark"
+                class="nav-link text-light"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
@@ -59,7 +59,7 @@ const navbar = () => {
             </li>
             <li class="nav-item dropdown">
               <Link
-                class="nav-link dropdown-toggle text-dark"
+                class="nav-link dropdown-toggle text-light"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
                 id="navbarDropdown"
@@ -71,7 +71,7 @@ const navbar = () => {
                 Classes
               </Link>
               <ul
-                class="dropdown-menu dropdown-menu-end"
+                class="dropdown-menu dropdown-menu-end "
                 aria-labelledby="navbarDropdown"
               >
                 <li>
@@ -89,18 +89,18 @@ const navbar = () => {
                 </li>
               </ul>
             </li>
-            <li class="nav-item text-dark">
+            <li class="nav-item text-light">
               <Link
-                class="nav-link text-dark"
+                class="nav-link text-light"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
                 Blogs
               </Link>
             </li>
-            <li class="nav-item text-dark">
+            <li class="nav-item">
               <Link
-                class="nav-link text-dark"
+                class="nav-link text-lihgt"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
