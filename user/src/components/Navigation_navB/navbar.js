@@ -7,11 +7,7 @@ const navbar = () => {
       style={{ backgroundColor: "transparent", height: "70px" }}
     >
       <div class="container">
-        <Link
-          class="h4 navbar-brand text-light"
-          style={{ fontSize: "30px" }}
-          to="/"
-        >
+        <Link class="h4 navbar-brand" style={{ fontSize: "30px" }} to="/">
           NavBar
         </Link>
         <button
@@ -31,7 +27,7 @@ const navbar = () => {
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
               <Link
-                class="nav-link active text-light"
+                class="nav-link links"
                 aria-current="page"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
@@ -39,18 +35,18 @@ const navbar = () => {
                 Home
               </Link>
             </li>
-            <li class="nav-item text-light">
+            <li class="nav-item">
               <Link
-                class="nav-link text-light"
+                class="nav-link link"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
                 Study Guides
               </Link>
             </li>
-            <li class="nav-item text-light">
+            <li class="nav-item">
               <Link
-                class="nav-link text-light"
+                class="nav-link"
                 style={{ fontSize: "20px", marginTop: "7px" }}
                 to="/"
               >
@@ -59,40 +55,25 @@ const navbar = () => {
             </li>
             <li class="nav-item dropdown">
               <Link
-                class="nav-link dropdown-toggle text-light"
-                style={{ fontSize: "20px", marginTop: "7px" }}
+                class="dropbutton disabled"
                 to="/"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Classes
-              </Link>
-              <ul
-                class="dropdown-menu dropdown-menu-end "
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <Link class="dropdown-item text-dark" to="/">
-                    O/L
-                  </Link>
-                </li>
-                <li>
-                  <hr class="dropdown-divider"></hr>
-                </li>
-                <li>
-                  <Link class="dropdown-item text-dark" to="/">
-                    A/L
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item text-light">
-              <Link
-                class="nav-link text-light"
                 style={{ fontSize: "20px", marginTop: "7px" }}
+              >
+                Class
+              </Link>
+              <div class="dropdown-content">
+                <Link to="/">O/L</Link>
+                <Link to="/">A/L</Link>
+              </div>
+            </li>
+            <li class="nav-item">
+              <Link
+                class="nav-link link"
+                style={{
+                  fontSize: "20px",
+                  marginTop: "7px",
+                  marginLeft: "7px",
+                }}
                 to="/"
               >
                 Blogs
@@ -100,8 +81,11 @@ const navbar = () => {
             </li>
             <li class="nav-item">
               <Link
-                class="nav-link text-lihgt"
-                style={{ fontSize: "20px", marginTop: "7px" }}
+                class="nav-link link"
+                style={{
+                  fontSize: "20px",
+                  marginTop: "7px",
+                }}
                 to="/"
               >
                 About us
@@ -109,7 +93,7 @@ const navbar = () => {
             </li>
             <li>
               <Link
-                className="btn btn-outline-primary rounded btn-sm"
+                className="btn btn-outline-primary rounded btn-sm "
                 style={{
                   fontSize: "20px",
                   margin: "10px",
@@ -119,7 +103,7 @@ const navbar = () => {
                 Sign In
               </Link>
               <Link
-                className="btn btn-primary rounded btn-sm"
+                className="btn btn-primary rounded btn-sm "
                 style={{
                   fontSize: "20px",
                   margin: "10px",
